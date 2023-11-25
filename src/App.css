@@ -42,6 +42,14 @@
 
   .icon{
     font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    /* align-items: center; */
+    cursor: pointer;
+  }
+
+  .flex{
+    display: flex;
     align-items: center;
   }
 
