@@ -2,6 +2,7 @@
 
 This project used React JS(JavaScript), CSS(Cascade Style Sheet) for implementation.\
 Icons from Material UI icons
+Logo design using Canva
 
 ## Available Scripts
 
