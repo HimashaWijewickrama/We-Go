@@ -1,6 +1,6 @@
 # Description
 
-This project used React JS(JavaScript), CSS(Cascade Style Sheet) for implementation.
+This project used React JS(JavaScript), CSS(Cascade Style Sheet) for implementation.\
 Icons from Material UI icons
 
 ## Available Scripts
