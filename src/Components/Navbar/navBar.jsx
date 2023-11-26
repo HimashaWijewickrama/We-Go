@@ -1,12 +1,25 @@
-import React from 'react';
-import './navBar.css';
+import React, { useState }  from 'react';
+import './NavBar.css';
 import Logo from '../../assets/we-travel-logo.png';
 import CancelIcon from '@material-ui/icons/Cancel';
 import MenuIcon from '@material-ui/icons/Menu';
 
-const navBar = () => {
+const NavBar = () => {
+
+    //function for NavBar toggle show - for mobile view
+    const [active, setActive] = useState('NavBar');
+
+    const showNav = () => {
+        setActive('NavBar activeNavBar')
+    }
+
+    //function for NavBar toggle close - for mobile view
+    const hideNav = () => {
+        setActive('NavBar')
+    }
+
     return (
-        <section className='navBarSection'>
+        <section className='NavBarSection'>
             <header className="header flex">
 
                 <div className="logoDiv">
@@ -18,7 +31,7 @@ const navBar = () => {
                     </a>
                 </div>
 
-                <div className="navBar">
+                <div className={active}>
                     <ul className="navLists flex">
 
                         <li className="navItem">
@@ -55,14 +68,14 @@ const navBar = () => {
 
                     </ul>
 
-                    <div className="closeNavBar">
+                    <div onClick={hideNav} className="closeNavBar">
                         <CancelIcon className="icon" />
                     </div>
 
 
 
                 </div>
-                <div className="toggleNavbar">
+                <div onClick={showNav} className="toggleNavBar">
                     <MenuIcon className="icon" />
                 </div>
             </header>
@@ -71,4 +84,4 @@ const navBar = () => {
     )
 }
 
-export default navBar
+export default NavBar
